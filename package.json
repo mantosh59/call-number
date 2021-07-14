@@ -1,0 +1,50 @@
+{
+  "name": "filepicker-updated",
+  "version": "1.0.8",
+  "description": "Plugin to pick files/images/videos from android or ios.",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Devmantosh",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^3.1.1"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^3.1.1",
+    "@capacitor/ios": "^3.1.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^4.3.5"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "Callnumber.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mantosh59/call-number"
+  },
+  "bugs": {
+    "url": "https://github.com/mantosh59/call-number/issues"
+  }
+}
