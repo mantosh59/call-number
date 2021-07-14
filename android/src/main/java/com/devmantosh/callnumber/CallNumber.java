@@ -31,25 +31,25 @@ public class CallNumber extends Plugin {
     PluginCall call;
 
     @PluginMethod()
-    public void showFilePicker(PluginCall call) {
+    public void call(PluginCall call) {
         this.call = call;
         if (getPermissionState("call") != PermissionState.GRANTED) {
             requestPermissionForAlias("call", call, "callPermsCallback");
         } else {
-            callNumber(this.call);
+            callNumber();
         }
     }
 
     @PermissionCallback
     private void callPermsCallback(PluginCall call) {
         if (getPermissionState("call") == PermissionState.GRANTED) {
-            callNumber(this.call);
+            callNumber();
         } else {
             call.reject("Permission is required to do call");
         }
     }
 
-    private void callNumber(PluginCall call) {
+    private void callNumber() {
         String numberToCall = call.getString("number", "").replaceAll("#", "%23");
         boolean bypassAppChooser = call.getBoolean("bypassAppChooser", false);
         if (!numberToCall.startsWith("tel:")) {

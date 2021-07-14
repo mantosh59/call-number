@@ -1,6 +1,6 @@
 {
-  "name": "filepicker-updated",
-  "version": "1.0.8",
+  "name": "capacitor-call-number",
+  "version": "1.0.0",
   "description": "Plugin to pick files/images/videos from android or ios.",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -18,7 +18,7 @@
   "devDependencies": {
     "@capacitor/android": "^3.1.1",
     "@capacitor/ios": "^3.1.1",
-    "rimraf": "^3.0.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.3.5"
   },
   "files": [
@@ -42,9 +42,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mantosh59/call-number"
+    "url": "git+https://github.com/mantosh59/call-number.git"
   },
   "bugs": {
     "url": "https://github.com/mantosh59/call-number/issues"
-  }
+  },
+  "homepage": "https://github.com/mantosh59/call-number#readme"
 }

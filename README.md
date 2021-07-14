@@ -9,20 +9,9 @@ Plugin to call a number.
 - `npm i capacitor-call-number`
 ## Usage
 
-<!-- import { FilePicker } from "filepicker-updated"; 
+import { CallNumber } from 'capacitor-call-number';
 
-FilePicker.showFilePicker({
-  fileTypes: ["image/*", "video/*"],
-}).then(
-  (fileResult: FilePickerResult) => {
-    const fileUri = fileResult.uri;
-    const fileName = fileResult.name;
-    const fileMimeType = fileResult.mimeType;
-    const fileExtension = fileResult.extension;
-    const fileSize = fileResult.size;
-  },
-  (error) => {
-    console.log(error);
-  }
-); -->
-```
+await CallNumber.call({ number: '94374747474', bypassAppChooser: false });
+
+bypassAppChooser = true (It will take to default dailer screen)
+bypassAppChooser = false (It will directly call the number) 

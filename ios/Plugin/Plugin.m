@@ -3,6 +3,6 @@
 
 // Define the plugin using the CAP_PLUGIN Macro, and
 // each method the plugin supports using the CAP_PLUGIN_METHOD macro.
-CAP_PLUGIN(FilePicker, "FilePicker",
-           CAP_PLUGIN_METHOD(showFilePicker, CAPPluginReturnPromise);
+CAP_PLUGIN(CallNumber, "CallNumber",
+           CAP_PLUGIN_METHOD(call, CAPPluginReturnPromise);
 )
