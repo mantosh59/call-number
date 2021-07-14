@@ -11,7 +11,7 @@ Plugin to call a number.
 
 import { CallNumber } from 'capacitor-call-number';
 
-await CallNumber.call({ number: '94374747474', bypassAppChooser: false });
+await CallNumber.call({ number: '111111', bypassAppChooser: false });
 
 bypassAppChooser = true (It will take to default dailer screen)
 bypassAppChooser = false (It will directly call the number) 

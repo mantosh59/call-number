@@ -1,6 +1,6 @@
 {
   "name": "capacitor-call-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin to pick files/images/videos from android or ios.",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
