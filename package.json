@@ -1,6 +1,6 @@
 {
   "name": "capacitor-call-number",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Plugin to pick files/images/videos from android or ios.",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -19,13 +19,13 @@
     "@capacitor/android": "^3.1.1",
     "@capacitor/ios": "^3.1.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.3.5"
+    "typescript": "^4.1.6"
   },
   "files": [
     "dist/",
     "ios/",
     "android/",
-    "Callnumber.podspec"
+    "CapacitorCallNumber.podspec"
   ],
   "keywords": [
     "capacitor",
